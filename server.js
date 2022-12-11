@@ -11,13 +11,15 @@ const authroute=require("./Routes/AuthenticationRoute.js");
 const branchroute = require("./Routes/BranchRoute.js");
 const subjectroute = require("./Routes/SubjectRoute");
 const facultyroute=require("./Routes/FacultyRoute");
-const studnetroute=require("./Routes/StudentRoute")
+const studentroute=require("./Routes/StudentRoute");
+const examroute=require("./Routes/ExamRoute.js");
 
 app.use("/auth",authroute);
 app.use("/branch", branchroute);
 app.use("/subject", subjectroute);
 app.use("/faculty",facultyroute);
-app.use("/student",studnetroute)
+app.use("/student",studentroute);
+app.use("/exam", examroute);
 
 app.listen(3000, () => {
     console.log("port connected");

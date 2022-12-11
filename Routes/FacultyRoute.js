@@ -19,7 +19,7 @@ FacultyRouter.route("/getAllNewFaculty").get(async (req,res,next) => {
         {
             if(err)
             {
-                res.send({"message": "Error", "response": "Subject Name was already exists!!!"});
+                res.send({"message": "Error"});
                 // next();
             }
             else
@@ -52,7 +52,7 @@ FacultyRouter.route("/getAssignedFaculty").get(async (req,res,next) => {
         {
             if(err)
             {
-                res.send({"message": "Error", "response": "Subject Name was already exists!!!"});
+                res.send({"message": "Error"});
                 // next();
             }
             else
